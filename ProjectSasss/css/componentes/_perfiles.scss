@@ -1,0 +1,49 @@
+.perfil {
+
+    width: 55%;
+    padding-top: 50px;
+    background-color: $color-claro; 
+    color: $color-claro;
+
+    &__avatar {
+
+        display: block;
+        margin: 0 auto;
+        border-radius: 50em;
+    }
+
+    &__nombre {
+
+        
+        text-align: center;
+        font-size: 20px;
+        @include titulos($Fuente2); 
+        color: $color-secundario;
+    }
+
+    &__titulo {
+
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        color: get-opacity($color-variacion,.50); 
+    }
+
+    &__boton {
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 15px auto;
+        padding-top: 5px;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        @include titulos($Fuente2); 
+        color: $color-claro;
+        background-color: get-opacity($color-primario,.50);
+        border: 2px solid get-opacity($color-claro,.30);
+
+    }
+
+}
